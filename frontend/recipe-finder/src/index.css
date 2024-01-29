@@ -1,0 +1,87 @@
+body{ 
+  margin: 0px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(19, 19, 146);
+  height: 50px;
+  padding: 10px 25px;
+}
+
+.nav--logo {
+  width: 30px;
+  margin-right: 7px;
+}
+
+.nav--search {
+  height: 30px;
+  width: 350px;
+  border-radius: 25px;
+  padding-left: 15px;
+  border: none;
+}
+
+.nav--buttons > button {
+  margin: 5px;
+  background: linear-gradient(to right , #2e95ff, #0061c6);
+  color: white;
+  border: none;
+  font: 400 2rem system-ui;
+  padding: 5px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nav--buttons > button:hover {
+  scale: 1.1;
+}
+
+main {
+  display: flex;
+}
+
+.filters {
+  border: 1px solid black;
+  width: 175px;
+  padding-left: 10px;
+  padding-top: 0px;
+}
+
+.recipes {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+  padding: 10px;;
+}
+
+.recipe-tile {
+  flex-basis: 255;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+  padding-bottom: 20px;
+}
+ .recipe-tile > img {
+  width: 250px;
+  height: auto;
+  align-self: center;
+  border-radius: 5px;
+  object-fit: cover;
+ }
+
+ .filter-tile {
+  /* border: 1px solid black; */
+  padding-bottom: 10px;
+ }
+
+ .filter-tile label {
+  margin-left: 10px;
+  color: blue;
+ }
